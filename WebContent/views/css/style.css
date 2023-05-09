@@ -1,0 +1,308 @@
+:root {
+  --bg: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(./img/bg.jpg);
+  --title: #E21818;
+  --text: #fff;
+  --text-hover: #FFDD83;
+  --text2: #393737;
+  --text3: #747272;
+  --sizeF: 1.5rem;
+  --sizeF2: 1.2rem;
+}
+
+.container-h {
+  min-height: 100vh;
+  background-color: #403b3b;
+}
+.container-h header nav {
+  height: 70px;
+  background-image: linear-gradient(180deg, rgba(7, 7, 7, 0.948) 20%, transparent);
+  z-index: 1000;
+}
+.container-h header nav .menu li a {
+  color: var(--text) !important;
+  font-size: var(--sizeF2);
+}
+.container-h header nav .menu li:hover a {
+  color: var(--text-hover) !important;
+}
+.container-h header nav .search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.container-h header nav .search i {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+.container-h header nav .search i:hover {
+  cursor: pointer;
+}
+.container-h header nav .search input:focus {
+  outline: none;
+  border-color: unset;
+  box-shadow: 0 0 0 0.25rem rgba(88, 112, 149, 0.286);
+}
+.container-h header nav .text-start span {
+  color: var(--text);
+}
+.container-h .videoSlide {
+  height: 490px !important;
+}
+.container-h .videoSlide .carousel-inner {
+  height: 490px !important;
+}
+.container-h .videoSlide .carousel-inner .carousel-item {
+  height: 100% !important;
+}
+.container-h .videoSlide .carousel-inner .carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover !important;
+}
+.container-h .videoSlide .carousel-inner .carousel-item .carousel-caption {
+  left: 30px !important;
+  right: unset !important;
+  text-align: start;
+}
+.container-h .TabContent .tab-item .item-video .card {
+  height: 350px;
+}
+.container-h .TabContent .tab-item .item-video .card .card-body .playVideo {
+  position: relative;
+}
+.container-h .TabContent .tab-item .item-video .card .card-body .playVideo input {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 90px;
+  border-radius: 28px;
+  background: rgba(208, 225, 251, 0.7058823529);
+  box-shadow: inset 7px 7px 3px rgba(141, 153, 171, 0.7882352941), inset -7px -7px 3px rgba(255, 255, 255, 0.8039215686);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.container-h .TabContent .tab-item .item-video .card .card-body .playVideo:hover input {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.container-h .TabContent .tab-item .item-video .card .card-body .playVideo img {
+  width: 100% !important;
+  height: 50% !important;
+  object-fit: cover;
+}
+.container-h .TabContent .tab-item .item-video .card .card-body .title .nameVideo {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.container-h .TabContent .tab-item .item-video .card .card-body .title span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.container-h .View .showVideo {
+  position: relative;
+}
+.container-h .View .showVideo video {
+  height: 500px;
+  object-fit: cover;
+}
+.container-h .View .showVideo video:hover {
+  cursor: pointer;
+}
+.container-h .View .showVideo #streams {
+  display: none;
+  z-index: 1000;
+  background-color: rgba(185, 184, 184, 0.5843137255);
+  border-radius: 20px;
+}
+.container-h .View .showVideo:hover #streams {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  transform: translate(0, 50%);
+}
+.container-h .View .showVideo .decsVideoShow .nameVideoShow h3 {
+  color: white;
+  font-weight: 700;
+}
+.container-h .View .showVideo .decsVideoShow .nameVideoShow .title {
+  color: rgb(201, 200, 200);
+}
+.container-h .View .showVideo .decsVideoShow .likeAndShare {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.container-h .View .showVideo .decsVideoShow .likeAndShare .like i {
+  font-size: 2rem;
+  color: rgb(111, 120, 216);
+}
+.container-h .View .showVideo .decsVideoShow .likeAndShare .like i:hover {
+  cursor: pointer;
+}
+.container-h .View .showVideo .decsVideoShow .likeAndShare .share i {
+  font-size: 2rem;
+}
+.liked{
+	color: blue !important;
+}
+.container-h .View .showVideo .decsVideoShow .likeAndShare .share i:hover {
+  cursor: pointer;
+}
+.container-h .View .propose .search_video form {
+  position: relative;
+  height: 40px input;
+  height-position: absolute;
+  height-width: 100%;
+  height-height: 100%;
+}
+.container-h .View .propose .search_video form .search-button {
+  position: absolute;
+  border: none;
+  padding: 0;
+  margin: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding-right: 10px;
+}
+.container-h .View .propose .item .playVideo {
+  position: relative;
+}
+.container-h .View .propose .item .playVideo input {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 90px;
+  border-radius: 28px;
+  background: rgba(208, 225, 251, 0.7058823529);
+  box-shadow: inset 7px 7px 3px rgba(141, 153, 171, 0.7882352941), inset -7px -7px 3px rgba(255, 255, 255, 0.8039215686);
+  transition: all 0.3s ease-in-out;
+  opacity: 0 !important;
+}
+.container-h .View .propose .item .playVideo:hover input {
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.container-h .View .propose .item .playVideo img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+}
+.container-h .View .propose .item .desc h4 {
+  color: white;
+  font-weight: 700;
+}
+.container-h .View .propose .item .desc small {
+  color: rgb(201, 200, 200);
+}
+.container-h .login,
+.container-h .changePass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+.container-h .login .card,
+.container-h .changePass .card {
+  width: 600px;
+  height: 650px;
+  background-color: rgba(98, 95, 95, 0.4039215686);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.505);
+  border-radius: 40px;
+}
+.container-h .login .card .card-header h3,
+.container-h .changePass .card .card-header h3 {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.container-h .login .card .card-body,
+.container-h .changePass .card .card-body {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+.container-h .login .card .card-body label,
+.container-h .changePass .card .card-body label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container-h .login .card .card-body .reme,
+.container-h .changePass .card .card-body .reme {
+  font-size: 1.5rem;
+  color: white;
+}
+.container-h .login .card .card-body .reme input,
+.container-h .changePass .card .card-body .reme input {
+  width: 20px;
+  height: 20px;
+  font-size: 2rem;
+}
+.container-h .login .card .card-footer button,
+.container-h .changePass .card .card-footer button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  color: #fffefe;
+}
+.container-h .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+.container-h .register .card {
+  width: 600px;
+  height: 800px;
+  background-color: rgba(98, 95, 95, 0.4039215686);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.505);
+  border-radius: 40px;
+}
+.container-h .register .card .card-header h3 {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+.container-h .register .card .card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+}
+.container-h .register .card .card-body label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.container-h .register .card .card-body .reme {
+  font-size: 1.5rem;
+  color: white;
+}
+.container-h .register .card .card-body .reme input {
+  width: 20px;
+  height: 20px;
+  font-size: 2rem;
+}
+.container-h .register .card .card-footer button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  color: #fffefe;
+}
+@media screen and (max-width: 990px) {
+  .container-h header .search {
+    width: 100%;
+  }
+  .container-h .View .showVideo video {
+    height: 260px;
+  }
+}

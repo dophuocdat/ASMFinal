@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>ASMFinal</display-name>
+  <welcome-file-list>
+    <welcome-file>OEServlet.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>OEServlet</display-name>
+    <servlet-name>OEServlet</servlet-name>
+    <servlet-class>Servlet.OEServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OEServlet</servlet-name>
+    <url-pattern>/OEServlet</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>LoginFilter</display-name>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>Filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/LoginFilter</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>AutherFilter</display-name>
+    <filter-name>AutherFilter</filter-name>
+    <filter-class>Filter.AutherFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AutherFilter</filter-name>
+    <url-pattern>/AutherFilter</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>videoFitlter</display-name>
+    <filter-name>videoFitlter</filter-name>
+    <filter-class>Filter.videoFitlter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>videoFitlter</filter-name>
+    <url-pattern>/videoFitlter</url-pattern>
+  </filter-mapping>
+</web-app>
